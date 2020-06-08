@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Text, TextInput, View, Button } from "react-native";
 
 export default function App() {
   const [outputText, setOutputText] = useState("This text");
   return (
-    <View style={styles.container}>
+    <View style={{ padding: 30 }}>
       <View>
-        <Text>...</Text>
+        <TextInput
+          placeholder="Course Goals"
+          style={{ borderBottomColor: "black", borderBottomWidth: 2 }}
+        />
+        <Button title="ADD" />
       </View>
-      <View>
-        <Text>...</Text>
-      </View>
+      <View></View>
     </View>
   );
 }
